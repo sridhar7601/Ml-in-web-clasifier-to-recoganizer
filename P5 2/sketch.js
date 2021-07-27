@@ -36,13 +36,13 @@ function setup() {
   mobilenet = ml5.featureExtractor('MobileNet', modelReady);
   classifier = mobilenet.classification(video, videoReady);
 
-  happyButton = createButton('person1');
-  happyButton.mousePressed(function() {
+  peroneButton = createButton('person1');
+  peroneButton.mousePressed(function() {
     classifier.addImage('person1');
   });
 
-  sadButton = createButton('person2');
-  sadButton.mousePressed(function() {
+  pertwoButton = createButton('person2');
+  peroneButton.mousePressed(function() {
     classifier.addImage('person2');
   });
 
